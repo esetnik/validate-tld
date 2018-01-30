@@ -8,7 +8,6 @@ chai.should();
 const ValidateTLD = require('../lib/validate-tld');
 const cache = require('../lib/util/cache');
 
-
 describe('#validate()', () => {
   let validateTLD = null;
   beforeEach(async () => {
@@ -24,7 +23,7 @@ describe('#validate()', () => {
 
   it('should cache the list of tlds', async () => {
     await validateTLD.validate('com');
-    const valid = await validateTLD.validate('com'); 
+    const valid = await validateTLD.validate('com');
     valid.should.equal(true);
   });
 
@@ -44,7 +43,7 @@ describe('#validate()', () => {
   });
 
   it('should fallback to local file when list of tlds cannot be loaded', async () => {
-    const httpsPromiseStub = stub(httpsPromise, 'get').throws(new Error('test network error'));
+    stub(httpsPromise, 'get').throws(new Error('test network error'));
     const valid = await validateTLD.validate('COM');
     valid.should.equal(true);
     httpsPromise.get.restore();
