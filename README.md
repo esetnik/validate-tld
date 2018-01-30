@@ -9,6 +9,6 @@ npm install --save validate-tld
 
 ### Usage
 ```js
-const ValidateTLD = require('../lib/validate-tld')({cacheTTL: 60});
+const ValidateTLD = require('validate-tld')({cacheTTL: 60});
 const valid = await ValidateTLD.validate('com'); // true
 ```
