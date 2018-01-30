@@ -1,5 +1,6 @@
-# validate-tld
+# validate-tld 
 A lightweight node module for validating whether is a provided string is an IANA recognized top level domain
+[![CircleCI](https://circleci.com/gh/esetnik/validate-tld.svg?style=svg)](https://circleci.com/gh/esetnik/validate-tld)
 
 ### Installation
 
