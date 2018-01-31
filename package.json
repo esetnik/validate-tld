@@ -1,6 +1,6 @@
 {
   "name": "validate-tld",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Determine whether a given TLD is valid according to IANA",
   "main": "index.js",
   "scripts": {
